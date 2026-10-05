@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Search — Angela</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="search.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <p class="site-title"><a href="index.html">Angela <span aria-hidden="true">✦</span></a></p>
+    <nav aria-label="Main"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="builds.html">Builds</a></li>
+      <li><a href="search.html" aria-current="page">Search</a></li>
+    </ul></nav>
+  </header>
+  <main id="main">
+    <p class="eyebrow">Find your way</p>
+    <h1>Search the site</h1>
+    <p>Search team profiles, our origin story, and project builds.</p>
+    <form class="search-form" id="site-search">
+      <label for="search-query">Search words or names</label>
+      <div class="search-controls">
+        <input id="search-query" name="q" type="search" autocomplete="off">
+        <button type="submit">Search</button>
+      </div>
+    </form>
+    <p id="search-status" role="status" aria-live="polite">Enter a word or name to search Angela’s portfolio.</p>
+    <ul class="search-results" id="search-results" aria-label="Search results"></ul>
+  </main>
+  <footer class="site-footer"><p>Angela · A student team portfolio exploring consciousness and space.</p></footer>
+</body>
+</html>
