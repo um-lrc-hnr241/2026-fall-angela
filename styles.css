@@ -1,10 +1,11 @@
 :root {
   --text: #1f2933;
   --muted: #52606d;
-  --background: #fdfcf9;
-  --accent: #1d5fa8;
-  --border: #d9d4c7;
-  --max-width: 46rem;
+  --background: #081326;
+  --surface: #101f37;
+  --accent: #9bdcff;
+  --border: #31445f;
+  --max-width: 68rem;
 }
 
 *,
@@ -18,7 +19,7 @@ body {
   font-family: "Lexend", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
-  color: var(--text);
+  color: #f2f6ff;
   background: var(--background);
 }
 
@@ -49,6 +50,10 @@ main,
   text-decoration: none;
 }
 
+.site-title a span {
+  color: var(--accent);
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -62,14 +67,198 @@ a {
   color: var(--accent);
 }
 
+nav a {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+nav a[aria-current="page"] {
+  color: #fff;
+  text-decoration: underline;
+}
+
 a:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 2px;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
   line-height: 1.2;
+}
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 1rem 0 3rem;
+  padding: clamp(2rem, 8vw, 6rem) clamp(1.5rem, 6vw, 5rem);
+  border: 1px solid #3c587a;
+  border-radius: 1.25rem;
+  background: radial-gradient(ellipse at 78% 20%, #254a73 0, transparent 34%), radial-gradient(ellipse at 20% 110%, #30255b 0, transparent 45%), linear-gradient(135deg, #102741, #11162c 70%);
+}
+
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  opacity: 0.55;
+  background-image: radial-gradient(1px 1px at 12% 27%, #fff 99%, transparent), radial-gradient(2px 2px at 81% 43%, #fff 99%, transparent), radial-gradient(1px 1px at 62% 78%, #fff 99%, transparent), radial-gradient(1px 1px at 36% 63%, #fff 99%, transparent), radial-gradient(2px 2px at 91% 13%, #fff 99%, transparent);
+  background-size: 180px 150px;
+  pointer-events: none;
+}
+
+.hero > * {
+  max-width: 44rem;
+}
+
+.hero h1 {
+  margin: 0.25rem 0 1rem;
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 38rem;
+  font-size: 1.2rem;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.4rem;
+  color: #081326;
+  background: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button-link:focus-visible {
+  outline-color: #fff;
+}
+
+.intro {
+  max-width: 55rem;
+  margin: 3rem 0;
+}
+
+.feature-grid,
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+  margin: 2rem 0 3rem;
+}
+
+.feature-card,
+.profile-card,
+.content-card {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface);
+}
+
+.feature-card h2,
+.profile-card h2 {
+  margin-top: 0.25rem;
+}
+
+.content-card {
+  margin: 1.5rem 0;
+}
+
+.content-card img {
+  display: block;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.search-form {
+  max-width: 42rem;
+  margin: 2rem 0;
+}
+
+.search-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.search-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.search-controls input {
+  flex: 1 1 16rem;
+  min-width: 0;
+  padding: 0.7rem;
+  border: 1px solid #8293aa;
+  border-radius: 0.35rem;
+  color: #152238;
+  background: #fff;
+  font: inherit;
+}
+
+.search-controls button {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.35rem;
+  color: #081326;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-results {
+  padding-left: 1.5rem;
+}
+
+.search-results li {
+  margin: 1rem 0;
+}
+
+.profile-note {
+  color: #d1dae8;
+  font-size: 1rem;
+}
+
+.site-footer {
+  border-color: var(--border);
+}
+
+.skip-link:focus {
+  z-index: 2;
+  color: #081326;
+}
+
+@media (max-width: 40rem) {
+  .site-header {
+    align-items: flex-start;
+  }
+
+  nav ul {
+    gap: 0.75rem 1rem;
+  }
 }
 
 img,
