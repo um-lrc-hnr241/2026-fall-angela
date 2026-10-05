@@ -1,10 +1,10 @@
 :root {
-  --text: #f4e7c3;
-  --muted: #c6b58d;
-  --background: #17130f;
-  --surface: #282016;
-  --accent: #ffd36e;
-  --border: #695133;
+  --text: #f1efff;
+  --muted: #c1c3dc;
+  --background: #111326;
+  --surface: #22243b;
+  --accent: #c5b8ff;
+  --border: #555477;
   --max-width: 68rem;
 }
 
@@ -20,7 +20,7 @@ body {
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--text);
-  background: radial-gradient(ellipse at 50% -20%, #3b2b19 0, transparent 55%), var(--background);
+  background: radial-gradient(ellipse at 50% -20%, #292448 0, transparent 55%), var(--background);
 }
 
 .site-header,
@@ -120,9 +120,9 @@ h2 {
   overflow: hidden;
   margin: 1rem 0 3rem;
   padding: clamp(2rem, 8vw, 6rem) clamp(1.5rem, 6vw, 5rem);
-  border: 1px solid #94703d;
+  border: 1px solid #8178bf;
   border-radius: 1.25rem;
-  background: radial-gradient(ellipse at 78% 15%, #9a6130 0, transparent 35%), radial-gradient(ellipse at 12% 100%, #543122 0, transparent 48%), linear-gradient(145deg, #382719, #1b1712 72%);
+  background: linear-gradient(110deg, rgb(13 15 35 / 94%) 0%, rgb(22 18 48 / 82%) 58%, rgb(22 18 48 / 52%) 100%), url("images/Firefly_Gemini_Flash_Create_an_image_of_consciousness_that_illustrates_pain_being_projected_onto_the_mater_796284-3.png") center / cover, linear-gradient(145deg, #292448, #111326 72%);
 }
 
 .hero::after {
@@ -131,7 +131,7 @@ h2 {
   inset: 0;
   content: "";
   opacity: 0.55;
-  background-image: radial-gradient(1px 1px at 12% 27%, #ffe7af 99%, transparent), radial-gradient(2px 2px at 81% 43%, #ffe7af 99%, transparent), radial-gradient(1px 1px at 62% 78%, #ffe7af 99%, transparent), radial-gradient(1px 1px at 36% 63%, #ffe7af 99%, transparent), radial-gradient(2px 2px at 91% 13%, #ffe7af 99%, transparent);
+  background-image: radial-gradient(1px 1px at 12% 27%, #e9e5ff 99%, transparent), radial-gradient(2px 2px at 81% 43%, #e9e5ff 99%, transparent), radial-gradient(1px 1px at 62% 78%, #e9e5ff 99%, transparent), radial-gradient(1px 1px at 36% 63%, #e9e5ff 99%, transparent), radial-gradient(2px 2px at 91% 13%, #e9e5ff 99%, transparent);
   background-size: 180px 150px;
   pointer-events: none;
 }
@@ -192,7 +192,7 @@ h2 {
   padding: 1.25rem;
   border: 1px solid var(--border);
   border-radius: 0.8rem;
-  background: linear-gradient(145deg, #302417, var(--surface));
+  background: linear-gradient(145deg, #292744, var(--surface));
 }
 
 .feature-card,
