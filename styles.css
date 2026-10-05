@@ -1,10 +1,10 @@
 :root {
-  --text: #1f2933;
-  --muted: #52606d;
-  --background: #081326;
-  --surface: #101f37;
-  --accent: #9bdcff;
-  --border: #31445f;
+  --text: #f4e7c3;
+  --muted: #c6b58d;
+  --background: #17130f;
+  --surface: #282016;
+  --accent: #ffd36e;
+  --border: #695133;
   --max-width: 68rem;
 }
 
@@ -19,8 +19,8 @@ body {
   font-family: "Lexend", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
-  color: #f2f6ff;
-  background: var(--background);
+  color: var(--text);
+  background: radial-gradient(ellipse at 50% -20%, #3b2b19 0, transparent 55%), var(--background);
 }
 
 .site-header,
@@ -100,9 +100,9 @@ h2 {
   overflow: hidden;
   margin: 1rem 0 3rem;
   padding: clamp(2rem, 8vw, 6rem) clamp(1.5rem, 6vw, 5rem);
-  border: 1px solid #3c587a;
+  border: 1px solid #94703d;
   border-radius: 1.25rem;
-  background: radial-gradient(ellipse at 78% 20%, #254a73 0, transparent 34%), radial-gradient(ellipse at 20% 110%, #30255b 0, transparent 45%), linear-gradient(135deg, #102741, #11162c 70%);
+  background: radial-gradient(ellipse at 78% 15%, #9a6130 0, transparent 35%), radial-gradient(ellipse at 12% 100%, #543122 0, transparent 48%), linear-gradient(145deg, #382719, #1b1712 72%);
 }
 
 .hero::after {
@@ -111,7 +111,7 @@ h2 {
   inset: 0;
   content: "";
   opacity: 0.55;
-  background-image: radial-gradient(1px 1px at 12% 27%, #fff 99%, transparent), radial-gradient(2px 2px at 81% 43%, #fff 99%, transparent), radial-gradient(1px 1px at 62% 78%, #fff 99%, transparent), radial-gradient(1px 1px at 36% 63%, #fff 99%, transparent), radial-gradient(2px 2px at 91% 13%, #fff 99%, transparent);
+  background-image: radial-gradient(1px 1px at 12% 27%, #ffe7af 99%, transparent), radial-gradient(2px 2px at 81% 43%, #ffe7af 99%, transparent), radial-gradient(1px 1px at 62% 78%, #ffe7af 99%, transparent), radial-gradient(1px 1px at 36% 63%, #ffe7af 99%, transparent), radial-gradient(2px 2px at 91% 13%, #ffe7af 99%, transparent);
   background-size: 180px 150px;
   pointer-events: none;
 }
@@ -143,7 +143,7 @@ h2 {
   padding: 0.7rem 1rem;
   border: 1px solid var(--accent);
   border-radius: 0.4rem;
-  color: #081326;
+  color: #21180d;
   background: var(--accent);
   font-weight: 600;
   text-decoration: none;
@@ -172,7 +172,24 @@ h2 {
   padding: 1.25rem;
   border: 1px solid var(--border);
   border-radius: 0.8rem;
-  background: var(--surface);
+  background: linear-gradient(145deg, #302417, var(--surface));
+}
+
+.feature-card,
+.profile-card,
+.content-card {
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 18%);
+}
+
+.feature-card a,
+.profile-card a,
+.content-card a {
+  text-underline-offset: 0.2em;
+}
+
+.feature-card:hover,
+.profile-card:hover {
+  border-color: var(--accent);
 }
 
 .feature-card h2,
