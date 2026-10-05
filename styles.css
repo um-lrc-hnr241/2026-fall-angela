@@ -54,13 +54,33 @@ main,
   color: var(--accent);
 }
 
-nav ul {
+nav > ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 1.25rem;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.team-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.team-menu > ul {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0.35rem 0 0 0.25rem;
+  padding: 0 0 0 0.65rem;
+  border-left: 1px solid var(--border);
+  list-style: none;
+}
+
+.team-menu > ul a {
+  font-size: 0.9rem;
 }
 
 a {
@@ -273,7 +293,7 @@ h2 {
     align-items: flex-start;
   }
 
-  nav ul {
+  nav > ul {
     gap: 0.75rem 1rem;
   }
 }
