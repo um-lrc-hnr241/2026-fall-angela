@@ -348,6 +348,57 @@ video {
   animation: ship-launch 0.65s ease-in both;
 }
 
+.space-transition--katherine .ship { animation-name: katherine-arrive; }
+.space-transition--owen .ship { animation-name: owen-arrive; }
+.space-transition--krish .ship { animation-name: krish-arrive; }
+.space-transition--pazona .ship { animation-name: pazona-arrive; }
+.space-transition--xie .ship { animation-name: xie-arrive; }
+
+.space-transition--clinton .ship {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  animation: none;
+}
+
+.space-transition .star {
+  position: absolute;
+  left: calc(50% - 5rem);
+  top: calc(50% - 1.5rem);
+  color: #fff3a6;
+  font-size: 2rem;
+  animation: star-enters-brain 0.65s ease-in both;
+}
+
+@keyframes katherine-arrive {
+  from { opacity: 0; transform: rotate(-90deg) scale(0.3); }
+  to { opacity: 1; transform: rotate(0) scale(1); }
+}
+
+@keyframes owen-arrive {
+  from { opacity: 0; transform: translate(-3rem, 1rem) rotate(-35deg); }
+  to { opacity: 1; transform: translate(0, 0) rotate(0); }
+}
+
+@keyframes krish-arrive {
+  from { opacity: 0; transform: scale(0.2); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pazona-arrive {
+  from { opacity: 0; transform: translateY(2rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes xie-arrive {
+  from { opacity: 0; transform: translateX(2rem) rotate(45deg); }
+  to { opacity: 1; transform: translateX(0) rotate(0); }
+}
+
+@keyframes star-enters-brain {
+  from { opacity: 0; transform: translateX(-3rem) scale(0.6); }
+  to { opacity: 1; transform: translateX(1rem) scale(0.2); }
+}
+
 @keyframes launch-in {
   from { opacity: 0; }
   to { opacity: 1; }
