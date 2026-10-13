@@ -7,7 +7,7 @@ const pages = [
   { title: "Brenner", url: "team/brenner.html", text: "Brenner member Angela consciousness space project team profile" },
   { title: "Pazona", url: "team/pazona.html", text: "Pazona member Angela consciousness space project team profile" },
   { title: "Xie", url: "team/xie.html", text: "Xie member Angela consciousness space project team profile" },
-  { title: "Builds: consciousness, pain, and matter", url: "builds.html", text: "builds visual pain matter artwork consciousness Westworld rigidity space Krish" }
+  { title: "Builds: consciousness, pain, matter, and Build 2", url: "builds.html", text: "builds visual pain matter artwork consciousness Westworld rigidity space Krish Build 2 second dream" }
 ];
 
 const form = document.querySelector("#site-search");
