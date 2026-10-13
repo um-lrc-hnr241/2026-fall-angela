@@ -321,3 +321,46 @@ video {
   padding: 0.5rem 0.75rem;
   background: var(--background);
 }
+
+.space-transition {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  color: #fff;
+  background: #111326;
+  text-align: center;
+  animation: launch-in 0.65s ease-out both;
+}
+
+.space-transition p {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 600;
+}
+
+.space-transition .ship {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+  animation: ship-launch 0.65s ease-in both;
+}
+
+@keyframes launch-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes ship-launch {
+  from { transform: translateX(-2rem) scale(0.8); }
+  to { transform: translateX(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .space-transition,
+  .space-transition .ship {
+    animation: none;
+  }
+}
