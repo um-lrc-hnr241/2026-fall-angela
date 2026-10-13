@@ -1,10 +1,10 @@
 const pages = [
   { title: "Home: Consciousness, out among the stars", url: "index.html", text: "Angela student team portfolio consciousness Westworld space rigidity Krish origin story crew builds" },
   { title: "Meet the team", url: "teams.html", text: "team crew Coile Gregg Patel Brenner Pazona Xie member profiles" },
-  { title: "Coile", url: "team/coile.html", text: "Coile member Angela consciousness space project team profile" },
-  { title: "Gregg", url: "team/gregg.html", text: "Gregg member Angela consciousness space project team profile" },
-  { title: "Patel", url: "team/patel.html", text: "Patel member Angela consciousness space project team profile" },
-  { title: "Brenner", url: "team/brenner.html", text: "Brenner member Angela consciousness space project team profile" },
+  { title: "Katherine", url: "team/coile.html", text: "Katherine member Angela consciousness space project team profile" },
+  { title: "Owen", url: "team/gregg.html", text: "Owen member Angela consciousness space project team profile" },
+  { title: "Krish", url: "team/patel.html", text: "Krish member Angela consciousness space project team profile" },
+  { title: "Clinton", url: "team/brenner.html", text: "Clinton member Angela consciousness space project team profile" },
   { title: "Pazona", url: "team/pazona.html", text: "Pazona member Angela consciousness space project team profile" },
   { title: "Xie", url: "team/xie.html", text: "Xie member Angela consciousness space project team profile" },
   { title: "Builds: consciousness, pain, matter, and Build 2", url: "builds.html", text: "builds visual pain matter artwork consciousness Westworld rigidity space Krish Build 2 second dream" }
