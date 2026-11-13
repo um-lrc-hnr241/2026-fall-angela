@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Krish — Angela Team Profile</title>
   <link rel="stylesheet" href="../styles.css">
+  <script src="../quotes.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -19,7 +20,7 @@
       <li class="team-menu"><a href="../teams.html" aria-current="page">Teams</a><ul aria-label="Team profiles">
         <li><a href="coile.html">Coile</a></li>
         <li><a href="gregg.html">Gregg</a></li>
-        <li><a href="patel.html" aria-current="page">Krish</a></li>
+        <li><a href="patel.html" aria-current="page">Patel</a></li>
         <li><a href="brenner.html">Brenner</a></li>
         <li><a href="pazona.html">Pazona</a></li>
         <li><a href="xie.html">Xie</a></li>
@@ -33,6 +34,22 @@
     <h1>Krish</h1>
     <p>After watching <em>Westworld</em>, Krish critically examined how, from the outside, he might appear no different from a host. That led him to wonder about rigidity and ask the team what the answer to that question could be. We led him toward the stars, and this website is one example of where that journey took us.</p>
     <p class="profile-note">Entering a new world of ideas: explore this crew member’s perspective on consciousness, identity, and space.</p>
+    <section class="content-card lecture-role" aria-labelledby="lecture-role-title">
+      <h2 id="lecture-role-title">Lecture lens: the questioner</h2>
+      <p>Krish’s project lens begins with asking what rigidity means and whether a mind or identity can stay fixed. That question helped lead the team toward consciousness and space.</p>
+    </section>
+    <section class="content-card quote-card" aria-labelledby="personal-quote-title">
+      <h2 id="personal-quote-title">A thought from Krish</h2>
+      <blockquote class="saved-quote" data-saved-quote hidden></blockquote>
+      <form class="quote-form" data-quote-form data-member="patel">
+        <label for="quote-patel">Add a personal quote</label>
+        <textarea id="quote-patel" name="quote" rows="3" maxlength="280" required></textarea>
+        <p class="profile-note">Saved in this browser only; it is not shared with the team.</p>
+        <button type="submit">Save quote</button>
+        <button class="clear-quote" type="button" data-clear-quote hidden>Remove saved quote</button>
+        <p class="quote-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
     <section class="content-card" aria-labelledby="member-journal-title">
       <h2 id="member-journal-title">Build &amp; journal</h2>
       <p><strong>Build:</strong> A space to share this member’s project contributions.</p>
