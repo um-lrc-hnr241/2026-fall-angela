@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Katherine — Angela Team Profile</title>
   <link rel="stylesheet" href="../styles.css">
+  <script src="../quotes.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -16,7 +17,7 @@
     <nav aria-label="Main"><ul>
       <li><a href="../index.html">Home</a></li>
       <li class="team-menu"><a href="../teams.html" aria-current="page">Teams</a><ul aria-label="Team profiles">
-        <li><a href="coile.html" aria-current="page">Katherine</a></li>
+        <li><a href="coile.html" aria-current="page">Coile</a></li>
         <li><a href="gregg.html">Gregg</a></li>
         <li><a href="patel.html">Patel</a></li>
         <li><a href="brenner.html">Brenner</a></li>
@@ -32,6 +33,22 @@
     <h1>Katherine</h1>
     <p>Katherine is part of Angela, a student team exploring consciousness and <em>Westworld</em> through a space-inspired portfolio.</p>
     <p class="profile-note">Entering a new world of ideas: explore this crew member’s perspective on consciousness, identity, and space.</p>
+    <section class="content-card lecture-role" aria-labelledby="lecture-role-title">
+      <h2 id="lecture-role-title">Lecture lens: the observer</h2>
+      <p>Coile’s project lens is to notice what changes when we look closely at a question, and to help the team make those observations visible.</p>
+    </section>
+    <section class="content-card quote-card" aria-labelledby="personal-quote-title">
+      <h2 id="personal-quote-title">A thought from Coile</h2>
+      <blockquote class="saved-quote" data-saved-quote hidden></blockquote>
+      <form class="quote-form" data-quote-form data-member="coile">
+        <label for="quote-coile">Add a personal quote</label>
+        <textarea id="quote-coile" name="quote" rows="3" maxlength="280" required></textarea>
+        <p class="profile-note">Saved in this browser only; it is not shared with the team.</p>
+        <button type="submit">Save quote</button>
+        <button class="clear-quote" type="button" data-clear-quote hidden>Remove saved quote</button>
+        <p class="quote-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
     <section class="content-card" aria-labelledby="member-journal-title">
       <h2 id="member-journal-title">Build &amp; journal</h2>
       <p><strong>Build:</strong> A space to share this member’s project contributions.</p>
