@@ -279,6 +279,81 @@ h2 {
   font-size: 1rem;
 }
 
+.music-player {
+  max-width: 34rem;
+  margin-top: 1.5rem;
+}
+
+.music-player p {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.music-toggle,
+.quote-form button {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.35rem;
+  color: #081326;
+  background: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.music-toggle:focus-visible,
+.quote-form button:focus-visible,
+.quote-form textarea:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.quote-form label {
+  display: block;
+  margin: 0.75rem 0 0.35rem;
+  font-weight: 600;
+}
+
+.quote-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 6rem;
+  padding: 0.7rem;
+  border: 1px solid #8293aa;
+  border-radius: 0.35rem;
+  color: #152238;
+  background: #fff;
+  font: inherit;
+}
+
+.quote-form .profile-note {
+  margin: 0.35rem 0 0.75rem;
+}
+
+.quote-form .clear-quote {
+  margin-left: 0.5rem;
+  color: var(--text);
+  background: transparent;
+}
+
+.quote-status {
+  min-height: 1.6em;
+}
+
+.saved-quote {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent);
+  color: var(--text);
+  background: rgb(0 0 0 / 15%);
+  overflow-wrap: anywhere;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 .site-footer {
   border-color: var(--border);
 }
