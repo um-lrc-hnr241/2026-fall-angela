@@ -3,7 +3,7 @@ const pages = [
   { title: "Meet the team", url: "teams.html", text: "team crew Coile Gregg Patel Brenner Pazona Xie member profiles" },
   { title: "Katherine", url: "team/coile.html", text: "Katherine member Angela consciousness space project team profile" },
   { title: "Owen", url: "team/gregg.html", text: "Owen member Angela consciousness space project team profile" },
-  { title: "Krish", url: "team/patel.html", text: "Krish member Angela consciousness space project team profile" },
+  { title: "Patel", url: "team/patel.html", text: "Patel member Angela consciousness space project team profile" },
   { title: "Clinton", url: "team/brenner.html", text: "Clinton member Angela consciousness space project team profile" },
   { title: "Pazona", url: "team/pazona.html", text: "Pazona member Angela consciousness space project team profile" },
   { title: "Xie", url: "team/xie.html", text: "Xie member Angela consciousness space project team profile" },
