@@ -1,5 +1,5 @@
 const pages = [
-  { title: "Home: Consciousness, out among the stars", url: "index.html", text: "Angela student team portfolio consciousness Westworld space rigidity Krish origin story crew builds" },
+  { title: "Home: Consciousness, pain, and Westworld", url: "index.html", text: "Angela student team portfolio consciousness Westworld Elaine Scarry The Body in Pain The Making and Unmaking of the World Interior Structure of the Artifact pain language imagination artifacts origin story crew builds" },
   { title: "Meet the team", url: "teams.html", text: "team crew Coile Gregg Patel Brenner Pazona Xie member profiles" },
   { title: "Katherine", url: "team/coile.html", text: "Katherine member Angela consciousness space project team profile" },
   { title: "Owen", url: "team/gregg.html", text: "Owen member Angela consciousness space project team profile" },
