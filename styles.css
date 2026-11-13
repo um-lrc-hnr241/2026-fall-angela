@@ -65,18 +65,31 @@ nav > ul {
 }
 
 .team-menu {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .team-menu > ul {
-  display: grid;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 10rem;
   gap: 0.15rem;
-  margin: 0.35rem 0 0 0.25rem;
-  padding: 0 0 0 0.65rem;
-  border-left: 1px solid var(--border);
+  margin: 0;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 0.35rem;
+  background: var(--surface);
   list-style: none;
+}
+
+.team-menu:hover > ul,
+.team-menu:focus-within > ul {
+  display: grid;
 }
 
 .team-menu > ul a {
