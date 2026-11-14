@@ -38,8 +38,22 @@
       <p><strong>Build:</strong> A space to share this member’s project contributions.</p>
       <p><strong>Journal:</strong> Record ideas, questions, and reflections from the creative process.</p>
     </section>
+    <section class="content-card" aria-labelledby="member-quote-title">
+      <h2 id="member-quote-title">A quote to keep</h2>
+      <p class="profile-note">Add a personal quote. It is saved only in this browser on this device.</p>
+      <blockquote class="saved-quote" data-saved-quote hidden aria-label="Your saved quote"></blockquote>
+      <form class="quote-form" data-quote-form data-member="pazona">
+        <label for="member-quote">Your quote</label>
+        <textarea id="member-quote" name="quote" rows="3" maxlength="280" required></textarea>
+        <p class="profile-note">Up to 280 characters.</p>
+        <button type="submit">Save quote</button>
+        <button class="clear-quote" type="button" data-clear-quote hidden>Clear saved quote</button>
+        <p class="quote-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
     <p><a href="../teams.html">← Back to all team members</a></p>
   </main>
   <footer class="site-footer"><p>Team Angela · A student team portfolio exploring consciousness and space.</p></footer>
+  <script src="../quotes.js" defer></script>
 </body>
 </html>
