@@ -64,14 +64,16 @@ nav > ul {
   list-style: none;
 }
 
-.team-menu {
+.team-menu,
+.build-menu {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.team-menu > ul {
+.team-menu > ul,
+.build-menu > ul {
   position: absolute;
   z-index: 5;
   top: 100%;
@@ -88,11 +90,14 @@ nav > ul {
 }
 
 .team-menu:hover > ul,
-.team-menu:focus-within > ul {
+.team-menu:focus-within > ul,
+.build-menu:hover > ul,
+.build-menu:focus-within > ul {
   display: grid;
 }
 
-.team-menu > ul a {
+.team-menu > ul a,
+.build-menu > ul a {
   font-size: 0.9rem;
 }
 
